@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boîte à outils AVEC · Méthode Ubora</title>
+<meta name="description" content="16 outils professionnels pour accompagner les Associations Villageoises d'Épargne et de Crédit (AVEC) en RDC : formation, diagnostic, suivi, AGR, plan d'affaires, templates. Méthode Ubora, adaptée à l'application Akiba.">
+<meta property="og:title" content="Boîte à outils AVEC · Méthode Ubora">
+<meta property="og:description" content="De l'étude de référence à l'évaluation finale : 16 outils et 29 templates pour accompagner les AVEC en RDC.">
+<meta property="og:image" content="https://avec.uborardc.com/img/logo-ubora.png">
+<link rel="icon" href="img/logo-ubora.png">
+<style>
+  :root { --navy:#1F3C73; --vert:#3DA639; --ocre:#C98A00; --texte:#111827; --doux:#374151; --fond:#ffffff; --pale:#F3F6FB; --ligne:#D8DEE9; --carte:#ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --texte:#F3F4F6; --doux:#D1D5DB; --fond:#0F172A; --pale:#16213A; --ligne:#2B3A57; --carte:#172440; } }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--texte); background:var(--fond); font-size:18px; line-height:1.6; }
+  a { color:var(--navy); }
+  @media (prefers-color-scheme: dark) { a { color:#9DB8E8; } }
+  .conteneur { max-width:1120px; margin:0 auto; padding:0 16px; }
+  header.barre { position:sticky; top:0; z-index:10; background:var(--fond); border-bottom:3px solid var(--vert); }
+  header.barre .conteneur { display:flex; align-items:center; gap:12px; height:64px; }
+  header.barre img { width:44px; height:44px; }
+  header.barre b { color:var(--navy); font-size:18px; }
+  @media (prefers-color-scheme: dark) { header.barre b { color:#fff; } }
+  header.barre nav { margin-left:auto; display:flex; gap:18px; font-family:Arial, sans-serif; font-size:15px; }
+  header.barre nav a { text-decoration:none; }
+  .btn { display:inline-block; background:var(--vert); color:#fff !important; text-decoration:none; font-family:Arial, sans-serif; font-weight:bold; padding:14px 22px; border-radius:10px; border:0; font-size:17px; cursor:pointer; }
+  .btn.second { background:transparent; color:var(--navy) !important; border:2px solid var(--navy); }
+  @media (prefers-color-scheme: dark) { .btn.second { color:#fff !important; border-color:#9DB8E8; } }
+  .hero { background:linear-gradient(135deg, #1F3C73 0%, #24508f 60%, #2f7d3a 100%); color:#fff; padding:64px 0 56px; }
+  .hero h1 { font-size:clamp(30px, 5vw, 48px); line-height:1.15; margin:0 0 12px; }
+  .hero p.accroche { font-size:clamp(18px, 2.4vw, 22px); max-width:760px; margin:0 0 28px; color:#EAF1FA; }
+  .hero .actions { display:flex; gap:12px; flex-wrap:wrap; }
+  .hero .btn.second { color:#fff !important; border-color:#fff; }
+  .chiffres { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-top:40px; }
+  .chiffres div { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.25); border-radius:12px; padding:14px; text-align:center; }
+  .chiffres b { display:block; font-size:30px; }
+  .chiffres span { font-family:Arial, sans-serif; font-size:14px; color:#EAF1FA; }
+  section { padding:56px 0; }
+  section.pale { background:var(--pale); }
+  h2 { font-size:clamp(26px, 3.4vw, 34px); color:var(--navy); margin:0 0 8px; }
+  @media (prefers-color-scheme: dark) { h2 { color:#fff; } }
+  .intro { color:var(--doux); max-width:760px; margin:0 0 28px; }
+  .filtres { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:24px; }
+  .filtres button { font-family:Arial, sans-serif; font-size:15px; padding:9px 14px; border-radius:999px; border:1.5px solid var(--ligne); background:var(--carte); color:var(--texte); cursor:pointer; }
+  .filtres button[aria-pressed="true"] { background:var(--navy); border-color:var(--navy); color:#fff; }
+  .grille { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:18px; }
+  .doc { background:var(--carte); border:1px solid var(--ligne); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+  .doc img { width:100%; height:auto; aspect-ratio:357/505; object-fit:cover; object-position:top; border-bottom:1px solid var(--ligne); background:#fff; max-height:260px; }
+  .doc-corps { padding:14px 16px 16px; display:flex; flex-direction:column; flex:1; }
+  .doc .num { font-family:Arial, sans-serif; font-size:13px; color:var(--doux); }
+  .doc h3 { margin:2px 0 6px; font-size:19px; line-height:1.3; color:var(--navy); }
+  @media (prefers-color-scheme: dark) { .doc h3 { color:#fff; } }
+  .doc p { margin:0 0 12px; font-size:16px; color:var(--doux); flex:1; }
+  .doc-pied { display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; font-family:Arial, sans-serif; font-size:13px; }
+  .pastille { padding:3px 9px; border-radius:6px; color:#fff; font-weight:bold; }
+  .pastille.f { background:var(--navy); } .pastille.b { background:var(--vert); } .pastille.fb { background:var(--ocre); }
+  .piliers { display:grid; grid-template-columns:repeat(5, 1fr); gap:14px; }
+  .pilier { background:var(--carte); border:1px solid var(--ligne); border-top:5px solid var(--vert); border-radius:12px; padding:16px; }
+  .pilier:nth-child(odd) { border-top-color:var(--navy); }
+  .pilier b { display:block; color:var(--navy); margin-bottom:6px; font-size:18px; }
+  @media (prefers-color-scheme: dark) { .pilier b { color:#fff; } }
+  .pilier span { font-size:16px; color:var(--doux); }
+  .akiba { display:grid; grid-template-columns:1.2fr 1fr; gap:28px; align-items:center; }
+  .akiba ul { padding-left:20px; margin:0 0 20px; }
+  .formulaire { display:grid; grid-template-columns:1fr 1.1fr; gap:32px; align-items:start; }
+  form { background:var(--carte); border:1px solid var(--ligne); border-radius:16px; padding:24px; }
+  .champs { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .champ { display:flex; flex-direction:column; gap:4px; }
+  .champ.large { grid-column:1 / -1; }
+  label { font-family:Arial, sans-serif; font-size:15px; font-weight:bold; }
+  label small { font-weight:normal; color:var(--doux); }
+  input, select { font:inherit; font-size:17px; padding:11px 12px; border:1.5px solid var(--ligne); border-radius:10px; background:var(--fond); color:var(--texte); width:100%; }
+  input:focus, select:focus { outline:3px solid rgba(61,166,57,.35); border-color:var(--vert); }
+  .consent { display:flex; gap:10px; align-items:flex-start; font-size:15px; margin:16px 0; }
+  .consent input { width:22px; height:22px; flex:none; margin-top:2px; }
+  .piege { position:absolute; left:-5000px; }
+  .message { margin-top:14px; padding:14px; border-radius:10px; font-family:Arial, sans-serif; font-size:16px; display:none; }
+  .message.ok { display:block; background:#EAF6E8; color:#1d5e1b; border:1px solid #3DA639; }
+  .message.erreur { display:block; background:#FDECEC; color:#8a1c1c; border:1px solid #D0342C; }
+  .avis { background:#FFF5DB; color:#5c4400; border:1px solid #C98A00; border-radius:10px; padding:12px 14px; margin-bottom:18px; font-family:Arial, sans-serif; font-size:16px; display:none; }
+  footer { background:#0f1f3d; color:#D8DEE9; padding:36px 0; font-size:15px; }
+  footer a { color:#fff; }
+  footer .conteneur { display:grid; grid-template-columns:2fr 1fr; gap:24px; }
+  @media (max-width: 860px) {
+    .chiffres { grid-template-columns:repeat(2, 1fr); }
+    .piliers { grid-template-columns:1fr 1fr; }
+    .akiba, .formulaire, footer .conteneur { grid-template-columns:1fr; }
+    header.barre nav { display:none; }
+  }
+  @media (max-width: 520px) { .champs { grid-template-columns:1fr; } .piliers { grid-template-columns:1fr; } body { font-size:17px; } }
+</style>
+</head>
+<body>
+<header class="barre"><div class="conteneur">
+  <img src="img/logo-ubora.png" alt="Logo Entreprise Sociale Ubora" width="44" height="44">
+  <b>Entreprise Sociale Ubora</b>
+  <nav><a href="#outils">Les outils</a><a href="#methode">La méthode</a><a href="#akiba">Akiba</a><a class="btn" style="padding:8px 14px;font-size:15px" href="#recevoir">Recevoir</a></nav>
+</div></header>
+
+<div class="hero"><div class="conteneur">
+  <h1>La boîte à outils AVEC<br>de la méthode Ubora</h1>
+  <p class="accroche">De l'étude de référence à l'évaluation finale : tout ce qu'il faut pour créer, former, suivre et rendre autonomes les Associations Villageoises d'Épargne et de Crédit en RDC, avec l'application Akiba.</p>
+  <div class="actions"><a class="btn" href="#recevoir">Recevoir la boîte à outils par e-mail</a><a class="btn second" href="#outils">Voir les 16 outils</a></div>
+  <div class="chiffres">
+    <div><b>16</b><span>documents</span></div>
+    <div><b>234</b><span>pages illustrées</span></div>
+    <div><b>29</b><span>templates vierges</span></div>
+    <div><b>100 %</b><span>adapté à la RDC rurale</span></div>
+  </div>
+</div></div>
+
+<section id="outils"><div class="conteneur">
+  <h2>Ce que contient la boîte</h2>
+  <p class="intro">Chaque outil indique à qui il s'adresse : au <b>formateur</b> (animateur, superviseur, équipe de projet), aux <b>bénéficiaires</b> (groupe, membres), ou aux deux.</p>
+  <div class="filtres" role="group" aria-label="Filtrer les outils">
+    <button type="button" data-filtre="tous" aria-pressed="true">Tous (16)</button>
+    <button type="button" data-filtre="F" aria-pressed="false">Formateur</button>
+    <button type="button" data-filtre="B" aria-pressed="false">Bénéficiaires</button>
+    <button type="button" data-filtre="FB" aria-pressed="false">Formateur et groupe</button>
+  </div>
+  <div class="grille">
+      <article class="doc" data-public="F">
+        <img src="img/apercus/00-Guide-general-de-la-boite-a-outils.png" alt="Couverture : Guide général" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 00</span>
+          <h3>Guide général</h3>
+          <p>Le cycle complet d'accompagnement, les rôles, Akiba, le calendrier et la liste des outils.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">11 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/01-Etude-de-reference.png" alt="Couverture : Étude de référence" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 01</span>
+          <h3>Étude de référence</h3>
+          <p>Indicateurs, questionnaire ménage, discussions de groupe, choix des communautés.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">12 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/02-Identification-et-sensibilisation.png" alt="Couverture : Identification et sensibilisation" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 02</span>
+          <h3>Identification et sensibilisation</h3>
+          <p>Autorités locales, réunion communautaire, 10 principes, adhésion des membres.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">11 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/03-Formation-des-animateurs.png" alt="Couverture : Formation des animateurs" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 03</span>
+          <h3>Formation des animateurs</h3>
+          <p>Recrutement, programme de 6 jours, test, grille d'observation sur le terrain.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">9 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/04-Modules-de-formation-des-AVEC.png" alt="Couverture : Les 7 modules de formation" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 04</span>
+          <h3>Les 7 modules de formation</h3>
+          <p>Pas à pas, avec le kit et avec Akiba : élections, règles, épargne, crédit, partage.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">28 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="B">
+        <img src="img/apercus/05-Kit-carnets-registres-et-reglement.png" alt="Couverture : Kit, carnets et règlement" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 05</span>
+          <h3>Kit, carnets et règlement</h3>
+          <p>Carnet d'épargne à timbres, registres, règlement intérieur type, fiche de partage.</p>
+          <div class="doc-pied"><span class="pastille b">Bénéficiaires</span><span class="pages">19 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/06-Diagnostic-des-AVEC-existantes.png" alt="Couverture : Diagnostic des AVEC existantes" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 06</span>
+          <h3>Diagnostic des AVEC existantes</h3>
+          <p>Grille sur 100, contrôle de caisse, plan de renforcement, reprise du cahier dans Akiba.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">13 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/07-Suivi-supervision-et-graduation.png" alt="Couverture : Suivi, supervision, graduation" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 07</span>
+          <h3>Suivi, supervision, graduation</h3>
+          <p>Visites, alertes Akiba, changement de phase, fin de cycle, autonomie du groupe.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">13 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="FB">
+        <img src="img/apercus/08-Modules-AGR.png" alt="Couverture : Activités génératrices de revenus" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 08</span>
+          <h3>Activités génératrices de revenus</h3>
+          <p>8 modules : idée, marché, calcul, plan, comptes, vente, crédit, action collective.</p>
+          <div class="doc-pied"><span class="pastille fb">Formateur et groupe</span><span class="pages">12 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="FB">
+        <img src="img/apercus/09-Modules-complementaires.png" alt="Couverture : Modules complémentaires" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 09</span>
+          <h3>Modules complémentaires</h3>
+          <p>Éducation financière, genre, leadership, conflits, risques, IMF, sécurité numérique.</p>
+          <div class="doc-pied"><span class="pastille fb">Formateur et groupe</span><span class="pages">10 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="FB">
+        <img src="img/apercus/10-Federation-des-AVEC-FAVEC.png" alt="Couverture : Fédération des AVEC" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 10</span>
+          <h3>Fédération des AVEC</h3>
+          <p>Constituer une FAVEC : fonds commun de crédit, assurance, dividendes.</p>
+          <div class="doc-pied"><span class="pastille fb">Formateur et groupe</span><span class="pages">10 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="F">
+        <img src="img/apercus/11-Evaluation-finale.png" alt="Couverture : Évaluation finale" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 11</span>
+          <h3>Évaluation finale</h3>
+          <p>Données Akiba, questionnaire final, histoires de changement, rapport.</p>
+          <div class="doc-pied"><span class="pastille f">Formateur</span><span class="pages">9 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="B">
+        <img src="img/apercus/12-Plan-d-affaires-simplifie.png" alt="Couverture : Plan d'affaires et Canevas UBORA" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 12</span>
+          <h3>Plan d'affaires et Canevas UBORA</h3>
+          <p>Le Lean Canvas en 5 lettres, modèles individuel et de groupe, exemples chiffrés.</p>
+          <div class="doc-pied"><span class="pastille b">Bénéficiaires</span><span class="pages">18 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="B">
+        <img src="img/apercus/13-Livret-du-membre.png" alt="Couverture : Livret du membre" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 13</span>
+          <h3>Livret du membre</h3>
+          <p>Règles d'or illustrées, droits et devoirs, carnet, crédit, caisse sociale, partage.</p>
+          <div class="doc-pied"><span class="pastille b">Bénéficiaires</span><span class="pages">9 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="FB">
+        <img src="img/apercus/14-La-methode-Ubora.png" alt="Couverture : La méthode Ubora" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 14</span>
+          <h3>La méthode Ubora</h3>
+          <p>Feu de santé, rituel de réunion, 10 jeux, défis d'épargne, réalités du terrain congolais.</p>
+          <div class="doc-pied"><span class="pastille fb">Formateur et groupe</span><span class="pages">14 pages · PDF</span></div>
+        </div>
+      </article>
+      <article class="doc" data-public="FB">
+        <img src="img/apercus/15-Templates-vierges.png" alt="Couverture : Templates vierges" loading="lazy" width="357" height="505">
+        <div class="doc-corps">
+          <span class="num">Document 15</span>
+          <h3>Templates vierges</h3>
+          <p>29 formulaires prêts à photocopier, un par page, et leur version Word modifiable.</p>
+          <div class="doc-pied"><span class="pastille fb">Formateur et groupe</span><span class="pages">36 pages · PDF + Word</span></div>
+        </div>
+      </article>
+  </div>
+  <p style="text-align:center;margin-top:32px"><a class="btn" href="#recevoir">Recevoir les 16 outils gratuitement</a></p>
+</div></section>
+
+<section id="methode" class="pale"><div class="conteneur">
+  <h2>La méthode Ubora</h2>
+  <p class="intro">« Ubora » veut dire qualité, excellence. Nous gardons les principes éprouvés des AVEC et y ajoutons ce que le terrain congolais nous a appris.</p>
+  <div class="piliers">
+    <div class="pilier"><b>Confiance scellée</b><span>Chaque franc compté devant tous, chaque opération scellée dans le journal d'Akiba.</span></div>
+    <div class="pilier"><b>Chiffres vivants</b><span>Carnet parlant, feu de santé vert-orange-rouge, minute du chiffre à chaque réunion.</span></div>
+    <div class="pilier"><b>Animateur coach</b><span>10 jeux, des histoires, des visites guidées par les alertes plutôt que par la routine.</span></div>
+    <div class="pilier"><b>Revenus d'abord</b><span>Le Canevas UBORA : une activité rentable pensée en 5 lettres simples.</span></div>
+    <div class="pilier"><b>Passerelle</b><span>Des groupes mûrs vers les fédérations, les IMF et les marchés.</span></div>
+  </div>
+</div></section>
+
+<section id="akiba"><div class="conteneur akiba">
+  <div>
+    <h2>Pensée pour l'application Akiba</h2>
+    <p class="intro">Akiba remplace le cahier papier des AVEC. Chaque outil de la boîte indique ce qui se fait avec le groupe et ce qui se fait dans l'application.</p>
+    <ul>
+      <li>Fonctionne <b>sans réseau</b>, les données restent dans le téléphone.</li>
+      <li>Réunion guidée en 8 étapes, carnet de chaque membre, partage calculé.</li>
+      <li>Journal scellé : toute modification cachée est détectée.</li>
+      <li>Alertes pour l'animateur, tableau de bord et indicateur « prête pour une IMF ».</li>
+    </ul>
+    <a class="btn second" href="https://cubakakatulanya-ux.github.io/akiba-avec/" target="_blank" rel="noopener">Découvrir Akiba</a>
+  </div>
+  <img src="img/apercus/14-La-methode-Ubora.png" alt="" style="width:100%;max-width:360px;justify-self:center;border-radius:12px;border:1px solid var(--ligne)">
+</div></section>
+
+<section id="recevoir" class="pale"><div class="conteneur formulaire">
+  <div>
+    <h2>Recevoir la boîte à outils</h2>
+    <p class="intro">Laissez vos coordonnées : vous recevez aussitôt, par e-mail, vos liens personnels de téléchargement (valables 7 jours), le tout en un fichier ZIP ou document par document.</p>
+    <p class="intro">Les outils sont gratuits pour les organisations, animateurs et groupes qui accompagnent des AVEC. Ils restent la propriété de l'Entreprise Sociale Ubora.</p>
+    <p class="intro"><b>Besoin d'aide ?</b> 0998 275 144 (appel ou WhatsApp)</p>
+  </div>
+  <form id="form" novalidate>
+    <div class="avis" id="avis-expire">Votre lien de téléchargement a expiré. Remplissez à nouveau le formulaire pour recevoir de nouveaux liens.</div>
+    <div class="champs">
+      <div class="champ"><label for="nom">Nom complet</label><input id="nom" name="nom" autocomplete="name" required></div>
+      <div class="champ"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+      <div class="champ"><label for="organisation">Organisation</label><input id="organisation" name="organisation" autocomplete="organization" placeholder="ONG, église, coopérative, AVEC…" required></div>
+      <div class="champ"><label for="fonction">Fonction</label>
+        <select id="fonction" name="fonction" required>
+          <option value="">Choisir…</option><option>Animateur / agent de terrain</option><option>Superviseur</option><option>Coordinateur / chef de projet</option><option>Suivi-évaluation</option><option>Membre du bureau d'une AVEC</option><option>Membre d'une AVEC</option><option>Formateur / consultant</option><option>Institution financière (IMF, COOPEC)</option><option>Étudiant / chercheur</option><option>Autre</option>
+        </select></div>
+      <div class="champ"><label for="province">Province / ville</label><input id="province" name="province" placeholder="Ex. Haut-Katanga, Lubumbashi" required></div>
+      <div class="champ"><label for="whatsapp">WhatsApp <small>(facultatif)</small></label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="+243 …"></div>
+      <div class="piege" aria-hidden="true"><label for="site_web">Ne pas remplir</label><input id="site_web" name="site_web" tabindex="-1" autocomplete="off"></div>
+    </div>
+    <label class="consent"><input type="checkbox" id="consentement" required><span>J'accepte que l'Entreprise Sociale Ubora conserve ces informations pour m'envoyer la boîte à outils et, éventuellement, me recontacter au sujet des AVEC et d'Akiba. Je peux demander leur suppression à tout moment (<a href="#confidentialite">en savoir plus</a>).</span></label>
+    <button class="btn" type="submit" id="envoyer" style="width:100%">Recevoir les outils par e-mail</button>
+    <div class="message" id="message" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+
+<footer><div class="conteneur">
+  <div>
+    <b style="color:#fff;font-size:18px">Entreprise Sociale Ubora</b><br>
+    Lubumbashi, République Démocratique du Congo<br>
+    0998 275 144 (appel ou WhatsApp) · <a href="mailto:contact@uborardc.com">contact@uborardc.com</a>
+    <p id="confidentialite" style="margin-top:16px"><b style="color:#fff">Confidentialité.</b> Vos données (nom, e-mail, organisation, fonction, province, WhatsApp) servent uniquement à vous envoyer la boîte à outils et à mieux connaître ses utilisateurs. Elles ne sont ni vendues ni partagées. Pour les consulter ou les faire supprimer, écrivez à contact@uborardc.com.</p>
+  </div>
+  <div>© 2026 Entreprise Sociale Ubora. Tous droits réservés.<br>Méthode Ubora et Canevas UBORA sont la propriété de l'Entreprise Sociale Ubora.</div>
+</div></footer>
+
+<script>
+(function () {
+  var API = 'https://outils-api.uborardc.com/api/inscription';
+  var boutons = document.querySelectorAll('.filtres button');
+  boutons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = b.getAttribute('data-filtre');
+      boutons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      document.querySelectorAll('.doc').forEach(function (d) { d.style.display = (f === 'tous' || d.getAttribute('data-public') === f) ? '' : 'none'; });
+    });
+  });
+  if (new URLSearchParams(location.search).get('lien') === 'expire') {
+    document.getElementById('avis-expire').style.display = 'block';
+    location.hash = 'recevoir';
+  }
+  var form = document.getElementById('form'), msg = document.getElementById('message'), btn = document.getElementById('envoyer');
+  function dire(texte, type) { msg.className = 'message ' + type; msg.textContent = texte; }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = function (id) { return document.getElementById(id).value.trim(); };
+    if (!v('nom') || !v('email') || !v('organisation') || !v('fonction') || !v('province')) return dire('Merci de remplir tous les champs obligatoires.', 'erreur');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v('email'))) return dire('Adresse e-mail invalide.', 'erreur');
+    if (!document.getElementById('consentement').checked) return dire('Merci de cocher la case d\'accord.', 'erreur');
+    var em = v('email'); btn.disabled = true; btn.textContent = 'Envoi en cours…';
+    fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({
+      nom: v('nom'), email: v('email'), organisation: v('organisation'), fonction: v('fonction'), province: v('province'),
+      whatsapp: v('whatsapp'), site_web: v('site_web'), consentement: true }) })
+      .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (d) {
+        if (d.ok) { form.reset(); dire('C\'est envoyé ! Ouvrez votre boîte e-mail (' + em + ') : vos liens vous attendent. Pensez à regarder dans les spams.', 'ok'); }
+        else dire(d.erreur || 'Une erreur est survenue. Réessayez.', 'erreur');
+      })
+      .catch(function () { dire('Pas de connexion au serveur. Vérifiez votre réseau et réessayez.', 'erreur'); })
+      .finally(function () { btn.disabled = false; btn.textContent = 'Recevoir les outils par e-mail'; });
+  });
+})();
+</script>
+</body>
+</html>
